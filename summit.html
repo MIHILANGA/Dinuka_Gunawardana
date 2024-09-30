@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>කෝච්චි පාරේ උසම තැන සොයා ගියෙ​මු
+
+    </title>
+    <style>
+        body {
+            background: repeating-linear-gradient(
+            45deg,
+            rgb(79, 228, 220),
+            white );
+            font-family:'Poppins',sans-serif;
+            
+        }
+        .panel{
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .image-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 52vh;
+      background: url('./images/362692051_630685562500307_8912694580668389567_n.jpg') no-repeat center center/cover;
+      z-index: -1;
+    }
+
+    .content-section {
+      position: relative;
+      top: 50vh;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 5em;
+      margin: 20px 0;
+    }
+
+    .content {
+      margin: 20px 0;
+    }
+
+    /* Parallax effect */
+    .parallax {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+
+    .content p{
+        font-size: large;
+    }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div class="image-section"></div>
+        <div class="parallax"></div>
+        <div class="content-section">
+          <div class="title">කෝච්චි පාරේ උසම තැන සොයා ගියෙ​මු
+
+          </div>
+          <h3>
+            AUGUST 3, 2023 </h3>
+          <div class="content">
+            <p>“Summit Level” යනු ශ්‍රී ලංකාවේ මධ්‍යම කඳුකරය හරහා දිවෙන ප්‍රධාන දුම්රිය මාර්ගයේ උසම ස්ථානයයි.
+              මෙය නුවරඑළිය දිස්ත්‍රික්කයේ පට්ටිපොල දුම්රිය ස්ථානයේ සිට මීටර් 800 ක දුරින් පිහිටා ඇත.
+            </p>
+            <p>කොළඹ සහ බදුල්ල සම්බන්ධ කරන ප්‍රධාන දුම්රිය මාර්ගය, මනරම් භූ දර්ශන, තේ වතු, කඳු සහ නිම්න රැසක් පිරි ඉතා දර්ශනීය ය ගමන් මාර්ගයකි.
+               Summit Level වටා ඇති පරිසරය විශේෂයෙන් විශ්මයජනක දසුන් සපයන අතර සංචාරකයින් බොහෝ දෙනා පැමිණෙන ජනප්‍රිය කලාපයක් වේ .
+               මෙම ස්ථානය නැරඹීමට පට්ටිපොළ දුම්රිය ස්ථානයේ දුම්රිය ස්ථානාධිපතිවරයාගෙන් අවසරයක්ද ලබා ගත යුතු බව දුම්රිය මාර්ගයේ අලුත් වැඩියා කටයුතුවල
+                නිරතව සිටි අයෙක් පැවසීය.
+            </p>
+            <p>මෙම ස්ථානය නැරඹීමට යෑමේදී පට්ටිපොළ දුම්රිය ස්ථානයෙන් බැස එතැන් සිට පයින් ගමන් කල යුතුය.එම මාර්ගය දෙපසද ඉතා මනරම් පරිසර පද්ධතියක් දැකගත හැකිය.ප්‍රදේශයේ සිසිල් දේශගුණය සහ සුන්දර දර්ශන සංචාරකයින් සඳහා දුම්රිය ගමනේ ප්‍රියජනක සහ අමතක නොවන කොටසක් බවට පත්කරන බව නොඅනුමානය.
+              ලංකාවේ උසම දුම්රිය ස්ථානය ද මෙය වේ. මෙය මුහුදු මට්ටමේ සිට 1897m ක් ඉහළින් පිහිටා ඇත. 
+              ලොව දුෂ්කරතම දුම්රිය මාර්ග අතරින් 07 වන ස්ථානය හිමි උඩරට දුම්රිය මාර්ගයෙහි පිහිටි පට්ටිපොල දුම්රිය ස්ථානය
+               අඹේවෙල සහ ඔහිය යන දුම්රිය ස්ථාන දෙකට මැදිව පිහිටා තිබේ.
+              </p>
+            <p>Summit මට්ටමේදී, දුම්රිය මාර්ගය මුහුදු මට්ටමේ සිට අඩි 6,226 (මීටර් 1,898) ක උන්නතාංශයකට ළඟා වේ</p>
+          </div>
+        </div>
+      </div>
+    <script>
+        window.addEventListener('scroll', function() {
+          let parallax = document.querySelector('.parallax');
+          let scrollPosition = window.pageYOffset;
+          parallax.style.transform = 'translateY(' + (scrollPosition * 0.5) + 'px)';
+        });
+      </script>
+</body>
+</html>

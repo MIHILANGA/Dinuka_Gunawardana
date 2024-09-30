@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Dinuka Gunawardana portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Your logo image -->
+    <link rel="icon" type="image/png" href="./images/Favicon.png">
+</head>
+
+
+<body>
+    <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="./images/signature.png" alt="">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="times"><img src="./images/times.svg" alt=""></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <header style="background-image: url('./images/cover_new44444.jpg');">
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img class="imggg" src="./images/signature.png" alt="Logo">
+                        </div>
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#services">Work</a>
+                            <a href="./blog.html">Blog</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button class="btn btn-primary" onclick="sendWhatsAppMessage()">Contact</button>
+                    </div>
+                </nav>
+                <div class="hero flex items-center justify-between">
+                    <div class="left flex-1 ">
+                        <h6></h6>
+                        <h1>Welcome to My <span><br>Creative World!</span></h1>
+                        <div>
+                            <button class="btn btn-secondary" onclick="downloadCV()">Download CV</button>
+                    </div>
+                    <div class="right flex-1">
+                        <h1></h1>
+                       
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+
+        <section id="about" class="about">
+            <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-img" src="./images/dinuka4.png" alt="">
+                </div>
+                <div class="flex-1 right">
+                    <h1>I'm Dinuka Gunawardana</h1>
+                    
+                    <p> I love telling stories through art in many ways. As a freelancer, I do a lot of different jobs like taking photos, making videos, editing, designing graphics, and more. I pay close attention to detail and enjoy being creative. My aim is to make every project special by bringing imagination to life. Whether I'm capturing moments, creating visuals, or designing graphics, I'm dedicated to making your ideas unforgettable. Come join me on this artistic journey, and let's make your vision a reality together.</p>
+                    <div class="social">
+                        
+                        <a href="https://www.facebook.com/Dinukagunawardan" target="_blank"><img src="./images/facebook-svgrepo-com.svg" alt=""></a>
+                        <a href="https://www.instagram.com/dinuka.gunawardan/" target="_blank"><img src="./images/instagram-logo-thin.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/dinuka-gunawardana/" target="_blank"><img src="./images/linkedin.svg" alt=""></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <h1 class="section-heading"><span>WORK</h1>
+                <p></p>
+                <div class="card-wrapper">
+                    <a href="photography.html">
+                    <div class="card">
+                        <img class="iccn" src="./images/camera.jpg" alt="">
+                        <h2>Photography</h2>
+                        <p>Photography captures moments, telling stories through images, preserving memories, and showcasing perspectives with creativity and technical skill.
+                        </p>
+                    </div>
+                    </a>
+                    
+                    <a href="video.html">
+                        <div class="card">
+                            <img class="iccn" src="./images/video.jpg" alt="">
+                            <h2>Videography</h2>
+                            <p>Videography captures moving images, creating visual narratives, documenting events, and conveying emotions through dynamic and creative storytelling.
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a href="edit.html">
+                        <div class="card">
+                            <img class="iccn" src="./images/video-editing.jpg" alt="">
+                            <h2>Editing</h2>
+                            <p>Editing refines and arranges content, enhancing storytelling by cutting, adjusting, and polishing visuals or text for clarity and impact.
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a href="graph.html">
+                        <div class="card">
+                            <img class="iccn" src="./images/graphic-design.jpg" alt="">
+                            <h2>Graphic Design</h2>
+                            <p>Graphic design combines visuals and text, crafting appealing and effective communication through typography, imagery, and layout to convey messages.
+                            </p>
+                        </div>
+                    </a>
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+        
+         <section id="blog" class="blog">
+        <div class="container">
+            <h1 class="section-heading"><span>BLOG</span></h1>
+            <div class="carousel-container" onmouseover="pauseScroll()" onmouseout="resumeScroll()">
+                <div class="carousel-slide">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./images/1700150925743.jpeg.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            
+                                <h1>අභිමානවත් නිදහසේ අනුස්මරණ​ය</h1>
+                            
+                            <span> MARCH 25, 2024</span>
+                            <p id="paragraph" class="truncate">නිදහස සිහිගන්වමින් ඉදිකෙරුණු නිදහස් අනුස්මරණ ශාලාව එසේත් නැත්නම් නිදහස් චතුරස්‍රය අද දිනයේ කාගේත් අවධානයට පාත්‍ර වූ ගොඩනැගිල්ලකි.1948 වර්ෂයේ ශ්‍රී ලංකාවට නිදහස ලැබීමෙන් පසු එම නිදහස දිනාගැනීම නිමිත්තෙන්, ශ්‍රී ලංකාවේ දීර්ඝ සහ ආකර්ෂණීය ඉතිහාසය සංකේතවත් කෙරෙන අනුස්මරණ ගොඩනැඟිල්ලක් නිර්මාණය කිරීමට එවකට පැවති රජය තීරණය කර ඇත.</p>
+                            <a href="blpost.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./images/1698595521901.jpeg.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            
+                                <h1>Ceylon Cinnamon</h1>
+                           
+                            <span>NOVEMBER 15, 2023</span>
+                            <p id="paragraph" class="truncate">Sri Lanka's cinnamon industry, known for its high-quality "Ceylon cinnamon," thrives in the country's lush southwestern landscapes. This aromatic spice, meticulously harvested and processed, is a cornerstone of Sri Lanka's economy, prized globally for its exceptional flavor and fragrance.</p>
+                            <a href="cinnemon.html" class="read-more" >Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./images/thelme.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            
+                                <h1>Thelme Costume</h1>
+                            
+                            <span> AUGUST 12, 2023</span>
+                            <p id="paragraph" class="truncate">The Thelme costume is a vibrant attire in low-country dance, beautifully arranged and used in shanthikarma ceremonies for community health and agriculture. The "pahatharata beraya," also known as "Dik beraya" or "goshaka beraya," is a unique drum used in these dances, especially in Yak thovil ceremonies, made from animal skins in the Ruhunu area.</p>
+                            <a href="thelme.html" class="read-more" >Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="./images/summit.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            
+                                <h1>කෝච්චි පාරේ උසම තැන සොයා ගියෙ​මු</h1>
+                            
+                            <span>AUGUST 3, 2023</span>
+                            <p id="paragraph" class="truncate">“Summit Level” යනු ශ්‍රී ලංකාවේ මධ්‍යම කඳුකරය හරහා දිවෙන ප්‍රධාන දුම්රිය මාර්ගයේ උසම ස්ථානයයි.මෙය නුවරඑළිය දිස්ත්‍රික්කයේ පට්ටිපොල දුම්රිය ස්ථානයේ සිට මීටර් 800 ක දුරින් පිහිටා ඇත.ලංකාවේ උසම දුම්රිය ස්ථානය ද මෙය වේ. මෙය මුහුදු මට්ටමේ සිට 1897m ක් ඉහළින් පිහිටා ඇත. ලොව දුෂ්කරතම දුම්රිය මාර්ග අතරින් 07 වන ස්ථානය හිමි උඩරට දුම්රිය මාර්ගයෙහි පිහිටි පට්ටිපොල දුම්රිය ස්ථානය අඹේවෙල සහ ඔහිය යන දුම්රිය ස්ථාන දෙකට මැදිව පිහිටා තිබේ.</p>
+                            <a href="summit.html" class="read-more" >Read More</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="contact">
+            <div class="container">
+                <h1 class="section-heading">CONTACT <span>US</span></h1>
+                <p></p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/pngwing.com.png" alt="">
+                        <h1>Call Us On</h1>
+                        <h6>+94 71 6295618</h6>
+                    </div>
+                    <div class="card">
+                        <img src="./images/new.png" alt="">
+                        <h1>Email Us At</h1>
+                        <h6>support@companyname.com</h6>
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+        </section>
+        <footer>
+            <img class="footer-logo" src="./images/signature.png" alt="">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/Dinukagunawardan" target="_blank"><img src="./images/fb222222.png" alt=""></a>
+                <a href="https://www.instagram.com/dinuka.gunawardan/" target="_blank"><img src="./images/IG2222222.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/dinuka-gunawardana/" target="_blank"><img src="./images/IN 2.png" alt=""></a>
+                        
+            </div>
+            <div class="copyright">
+                   All Rights Reserved © Dinuka Gunawardana </br> 2021 - 2024
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        function downloadCV() {
+            var cvFilePath = "./images/DinukaCV.pdf"; 
+            window.open(cvFilePath);
+        }
+    </script>
+    <!-- Add the following JavaScript function -->
+    <script>
+        function sendWhatsAppMessage() {
+            var phoneNumber = "+94716295618"; // Your WhatsApp number
+            var message = "Hello, I'm interested in your services. Can we chat?"; // Your message
+            
+            // Construct the WhatsApp API URL
+            var apiURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+            
+            // Open the WhatsApp API URL in a new tab/window
+            window.open(apiURL);
+        }
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var buttons = document.querySelectorAll('.card .overlay button');
+    
+        buttons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var text = this.parentElement.querySelector('p').textContent;
+                document.getElementById('popupText').textContent = text;
+                document.getElementById('popupPanel').style.display = 'block';
+            });
+        });
+    
+        document.querySelector('.close').addEventListener('click', function() {
+            document.getElementById('popupPanel').style.display = 'none';
+        });
+    });
+
+    const cardWrapper = document.querySelector('.card-wrapper');
+        const cards = document.querySelectorAll('.card');
+
+        let cardIndex = 0;
+        const cardCount = cards.length;
+        const cardWidth = cards[0].offsetWidth + parseInt(getComputedStyle(cards[0]).marginRight);
+
+        // Function to slide the cards
+        function slideCards() {
+            cardIndex = (cardIndex + 1) % cardCount;
+            const scrollAmount = cardIndex * cardWidth;
+            cardWrapper.scrollTo({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        // Automatically slide the cards every 3 seconds (adjust as needed)
+        setInterval(slideCards, 3000);
+    </script>
+<script>
+function scrollCards(direction) {
+    const container = document.querySelector('.card-wrapper');
+    const cardWidth = container.querySelector('.card').offsetWidth;
+    const scrollAmount = direction * container.offsetWidth / 2; // Adjust the value according to card width and desired scroll distance
+
+    if (direction === -1) {
+        container.scrollLeft -= scrollAmount; // Scroll left
+    } else {
+        container.scrollLeft += scrollAmount; // Scroll right
+    }
+}
+</script>
+<script>
+    let lastScrollTop = 0;
+    const navBar = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Scroll down
+            navBar.style.top = '-100px'; // Adjust the value to hide the navigation bar completely
+        } else {
+            // Scroll up
+            navBar.style.top = '0';
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+    });
+
+    // Function to show the navigation bar when scrolling to the top of the page
+    window.addEventListener('scroll', function () {
+        if (window.scrollY === 0) {
+            navBar.style.top = '0';
+        }
+    });
+</script>
+<script>
+let isPaused = false;
+
+function pauseScroll() {
+    isPaused = true;
+    document.querySelector('.carousel-slide').style.animationPlayState = 'paused';
+}
+
+function resumeScroll() {
+    isPaused = false;
+    document.querySelector('.carousel-slide').style.animationPlayState = 'running';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Start auto slide (show next cards) every 5 seconds
+    setInterval(function() {
+        if (!isPaused) {
+            document.querySelector('.carousel-slide').style.animation = 'scroll 200s linear infinite'; /* Continuous scrolling animation with slower speed */
+        }
+    }, 5000);
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+            const paragraph = document.getElementById("paragraph");
+            const maxLength = 200; // Adjust the maximum length as needed
+
+            if (paragraph.textContent.length > maxLength) {
+                paragraph.textContent = paragraph.textContent.substring(0, maxLength) + '...';
+            }
+        });
+
+</script>
+
+
+</body>
+
+</html>

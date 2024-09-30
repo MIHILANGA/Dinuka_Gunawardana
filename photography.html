@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinuka Gunawardana Photograph</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/photo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+    
+    <link rel="icon" type="image/png" href="./images/Favicon.png">
+</head>
+<body>
+    <div class="content">
+        <h1>PHOTOGRAPHY</h1>
+
+        <div class="section-bar">
+            <a href="#section1">Documentary Photography</a>
+            <a href="#section2">Portrait Photography</a>
+            <a href="#section3">Commercial Photography</a>
+        </div>
+        
+        <div id="section1" class="section">
+          <h2>Documentary Photography</h2>
+          <div class="gallery">
+              <img src="./images/doc/0de84a4e-2e2a-4819-b254-1f42f8235bc8.jpeg.jpg" alt="Image 1">
+              <img src="./images/doc/331f2b32-0a5c-4d6e-b3ef-4ac11a90b404.jpeg.jpg" alt="Image 2">
+              <img src="./images/doc/2ae55875-4bad-4b0b-9886-e462f97f621f.jpeg.jpg" alt="Image 3">
+              <img src="./images/doc/e3ed2ad8-1780-4832-a95f-97ba9d9ea7f7.jpeg.jpg" alt="Image 4">
+              <img src="./images/doc/eb291f22-2de4-4910-959b-fdaabb311c3a.jpeg.jpg" alt="Image 5">
+              <img src="./images/doc/1698595521901.jpeg.jpg" alt="Image 6">
+              
+              <img src="./images/doc/19b7282a-60a6-45b6-a52a-c09862c72e9a.jpg" alt="Image 1">
+              <img src="./images/doc/a1df246e-84b5-478b-a9b1-a0a0ae2c00d0.jpg" alt="Image 2">
+              <img src="./images/doc/pexels-dinukagunawardana-18218690.jpg" alt="Image 3">
+              <img src="./images/doc/4c570ba2-f8cd-435a-8d79-e5b42578200c.jpg" alt="Image 1">
+              <img src="./images/doc/450d52ec-af51-440a-ac55-646af60ad1dd.jpg" alt="Image 2">
+              <img src="./images/doc/pexels-dinukagunawardana-16573230.jpg" alt="Image 3">
+              <img src="./images/doc/pexels-dinukagunawardana-17826963.jpg" alt="Image 1">
+              <img src="./images/doc/pexels-dinukagunawardana-17876569.jpg" alt="Image 2">
+              <img src="./images/doc/pexels-dinukagunawardana-18140253.jpg" alt="Image 1">
+              <img src="./images/doc/pexels-dinukagunawardana-18140262.jpg" alt="Image 2">
+              <img src="./images/doc/pexels-dinukagunawardana-18157718.jpg" alt="Image 3">
+              <img src="./images/doc/pexels-dinukagunawardana-18157725.jpg" alt="Image 4">
+          </div>
+      </div>
+  
+      <div id="section2" class="section">
+          <h2>Portrait Photography</h2>
+          <div class="gallery">
+              <img src="image4.jpg" alt="Image 4">
+              <img src="image5.jpg" alt="Image 5">
+              <img src="image6.jpg" alt="Image 6">
+          </div>
+      </div>
+  
+      <div id="section3" class="section">
+          <h2>Commercial Photography</h2>
+          <div class="gallery">
+              <img src="./images/doc/1.jpeg" alt="Image 7">
+              <img src="./images/doc/2.jpeg" alt="Image 8">
+              <img src="./images/doc/3.jpeg" alt="Image 9">
+              <img src="./images/doc/4.jpeg" alt="Image 9">
+              <img src="./images/doc/5.jpeg" alt="Image 9">
+              <img src="./images/doc/6.jpeg" alt="Image 9">
+              <img src="./images/doc/7.jpeg" alt="Image 9">
+              <img src="./images/doc/8.jpeg" alt="Image 9">
+              <img src="./images/doc/430272535_420201273753591_2970738834201347867_n.jpg" alt="Image 9">
+              <img src="./images/doc/430909904_769250811502916_3368129491056021258_n.jpg" alt="Image 9">
+              <img src="./images/doc/431018946_2763628713777660_62921510490211303_n.jpg" alt="Image 9">
+              <img src="./images/doc/432782800_381478584770330_7614508771686662311_n.jpg" alt="Image 9">
+              <img src="./images/doc/433894903_18259638610233158_756937694701129798_n.jpg" alt="Image 9">
+              <img src="./images/doc/437850253_399138839670971_8144827588185430811_n.jpg" alt="Image 9">
+              <img src="./images/doc/448406159_1953372941747550_7613971339510125129_n.jpg" alt="Image 9">
+              <img src="./images/doc/448527182_2097236127298955_8079379555982708484_n.jpg" alt="Image 9">
+              
+          </div>
+      </div>
+  
+      <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <span class="prev">&#10094;</span>
+          <div class="modal-content">
+              <img id="modalImg" src="" alt="Expanded Image">
+          </div>
+          <span class="next">&#10095;</span>
+      </div>
+  
+      <script>
+        document.querySelectorAll('.gallery img').forEach((img, index) => {
+    img.addEventListener('click', () => {
+        openModal(img);
+    });
+});
+
+let currentImageIndex;
+let currentImages;
+const modal = document.getElementById("myModal");
+const modalImg = document.getElementById("modalImg");
+
+function openModal(img) {
+    const section = img.closest('.gallery');
+    currentImages = Array.from(section.querySelectorAll('img')).map(img => img.src);
+    currentImageIndex = currentImages.indexOf(img.src);
+    showModal(currentImages[currentImageIndex]);
+    modal.style.display = "block";
+}
+
+function showModal(src) {
+    modalImg.src = src;
+
+    document.querySelector('.prev').onclick = () => {
+        currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : currentImages.length - 1;
+        modalImg.src = currentImages[currentImageIndex];
+    };
+
+    document.querySelector('.next').onclick = () => {
+        currentImageIndex = (currentImageIndex < currentImages.length - 1) ? currentImageIndex + 1 : 0;
+        modalImg.src = currentImages[currentImageIndex];
+    };
+
+    // Keyboard navigation
+    document.onkeydown = function(event) {
+        event = event || window.event;
+        if (event.keyCode == 37) {
+            // Left arrow key
+            currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : currentImages.length - 1;
+            modalImg.src = currentImages[currentImageIndex];
+        } else if (event.keyCode == 39) {
+            // Right arrow key
+            currentImageIndex = (currentImageIndex < currentImages.length - 1) ? currentImageIndex + 1 : 0;
+            modalImg.src = currentImages[currentImageIndex];
+        }
+    };
+}
+
+document.querySelector('.close').onclick = () => {
+    modal.style.display = "none";
+    document.onkeydown = null; // Remove the keyboard navigation handler when the modal is closed
+};
+
+window.onclick = (event) => {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        document.onkeydown = null; // Remove the keyboard navigation handler when the modal is closed
+    }
+};
+
+      </script>
+  
+  </body>
+  </html>
+  

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>අභිමානවත් නිදහසේ අනුස්මරණ​ය</title>
+    <style>
+        body {
+            background: repeating-linear-gradient(
+            45deg,
+            rgb(79, 228, 220),
+            white );
+            font-family:'Poppins',sans-serif;
+            
+        }
+        .panel{
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .image-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 52vh;
+      background: url('./images/cinnamon\ web\ artical\ page.jpg') no-repeat center center/cover;
+      z-index: -1;
+    }
+
+    .content-section {
+      position: relative;
+      top: 50vh;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 5em;
+      margin: 20px 0;
+    }
+
+    .content {
+      margin: 20px 0;
+    }
+
+    /* Parallax effect */
+    .parallax {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+
+    .content p{
+        font-size: large;
+    }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div class="image-section"></div>
+        <div class="parallax"></div>
+        <div class="content-section">
+          <div class="title">Ceylon Cinnamon</div>
+          <h3>NOVEMBER 15, 2023 </h3>
+          <div class="content">
+            <p>
+                The Cinnamon industry in Sri Lanka is renowned worldwide for its high-quality cinnamon production. Often referred to as "Ceylon cinnamon," Sri Lanka has been a major player in the global cinnamon market for centuries. The country's lush landscapes, particularly in the southwestern regions, provide the ideal environment for cinnamon cultivation. Cinnamon trees, with their aromatic inner bark, are meticulously harvested and processed, preserving the spice's exquisite flavor and fragrance. Sri Lanka's cinnamon industry plays a vital role in the country's economy, and its exceptional product remains a sought-after ingredient in culinary and medicinal applications around the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    <script>
+        window.addEventListener('scroll', function() {
+          let parallax = document.querySelector('.parallax');
+          let scrollPosition = window.pageYOffset;
+          parallax.style.transform = 'translateY(' + (scrollPosition * 0.5) + 'px)';
+        });
+      </script>
+</body>
+</html>

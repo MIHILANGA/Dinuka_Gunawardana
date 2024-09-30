@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thelme costume</title>
+    <style>
+        body {
+            background: repeating-linear-gradient(
+            45deg,
+            rgb(79, 228, 220),
+            white );
+            font-family:'Poppins',sans-serif;
+            
+        }
+        .panel{
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .image-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 52vh;
+      background: url('./images/DSC01727.jpg') no-repeat center center/cover;
+      z-index: -1;
+    }
+
+    .content-section {
+      position: relative;
+      top: 50vh;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 5em;
+      margin: 20px 0;
+    }
+
+    .content {
+      margin: 20px 0;
+    }
+
+    /* Parallax effect */
+    .parallax {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+
+    .content p{
+        font-size: large;
+    }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div class="image-section"></div>
+        <div class="parallax"></div>
+        <div class="content-section">
+          <div class="title">Thelme Costume </div>
+          <h3> AUGUST 12, 2023 </h3>
+          <div class="content">
+            <p>
+                Thelme costume may refer to as the main costume of low country dance tradition. This costume arrangement is very beautifully and colorfully arranged. 
+                In addition to that, low-country dancers are using many more costume sets. This thelme costume is mostly used in shanthikarama.
+            </p>
+
+            <p>
+                These shanthikarma are conducted to protect the health of low country people as well as the productivity of the crops and animals.
+            </p>
+
+            <p>
+                “ pahatharata beraya” is used in this low country dancing as the drum. Because of it’s long shape, it is called as “Dik beraya”. 
+                Also this is called as “goshaka beraya”, because of its loud sound. As well as this is called as “Yak beraya”, because it is used for Yak thovil. 
+                This drum is unique to Ruhunu area, so some people called this drum as “Ruhunu beraya”. Likethis, this drum is in use under several terms. 
+                It is special that the drum is made using skins that are taken from animals.
+            </p>
+          </div>
+        </div>
+      </div>
+    <script>
+        window.addEventListener('scroll', function() {
+          let parallax = document.querySelector('.parallax');
+          let scrollPosition = window.pageYOffset;
+          parallax.style.transform = 'translateY(' + (scrollPosition * 0.5) + 'px)';
+        });
+      </script>
+</body>
+</html>
